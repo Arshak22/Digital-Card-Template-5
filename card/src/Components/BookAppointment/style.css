@@ -1,0 +1,92 @@
+.Appointment {
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+.appointment-form {
+  margin: 0 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointment-form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointment-form input {
+  width: 50%;
+  margin: 5px;
+  color: #000000;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  /* color-scheme: dark; */
+  outline: none;
+}
+
+.appointment-form input:focus {
+  outline: none;
+}
+
+.appointment-form input::placeholder {
+  color: #000000;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.inpt-l {
+  text-align: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: transparent
+    linear-gradient(270deg, rgba(0, 107, 165, 0) 0%, rgb(230 173 0) 100%);
+}
+
+.inpt-r {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: right;
+  background: transparent
+    linear-gradient(90deg, rgba(0, 107, 165, 0) 0%, rgb(230 173 0) 100%);
+}
+
+.send-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.send-button button {
+  background-color: var(--yellow);
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 7px;
+  padding: 10px 25px;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.send-button button:hover {
+  transform: scale(1.1);
+}
+
+.error,
+.success {
+  font-family: var(--secondary-font);
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+  color: #000000;
+}

@@ -1,0 +1,137 @@
+.Listings {
+  margin-top: 6em;
+}
+
+.headline {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 45px;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: var(--font);
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-slider:hover {
+  cursor: grab;
+}
+
+.slick-slider:active {
+  cursor: grabbing;
+}
+
+.slick-slide {
+  transform: scale(0.8);
+  filter: blur(2px) contrast(1.3);
+  opacity: 0.5;
+  transition: all 1s ease;
+}
+
+.slick-slide.slick-center {
+  transform: scale(1);
+  filter: blur(0) contrast(1.3);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.slick-slide.slick-center img:hover {
+  transform: scale(1.1);
+}
+
+.slick-slide img {
+  max-width: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.single-listing {
+  display: grid !important;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.listing-info {
+  padding: 20px;
+  position: relative;
+}
+
+.listing-info::before {
+  position: absolute;
+  content: '';
+  background: transparent linear-gradient(0deg, #b88b00, var(--yellow));
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.listing-info a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.listing-address {
+  color: var(--white);
+  font-family: var(--secondary-font);
+  font-size: 17px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  filter: drop-shadow(1px 2px 1px rgb(59, 59, 59));
+}
+
+.listing-price {
+  color: var(--white);
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 2px;
+  filter: drop-shadow(1px 2px 1px rgb(59, 59, 59));
+}
+
+.listing-numbers-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  filter: drop-shadow(1px 2px 1px rgb(59, 59, 59));
+}
+
+.listing-numbers-info h3 {
+  display: grid;
+  color: var(--white);
+  font-family: var(--secondary-font);
+}
+
+.listing-number {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.slick-list {
+  width: 900px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  left: -16em;
+}
+
+@media screen and (max-width: 500px) {
+  .slick-slide.slick-center:hover {
+    transform: scale(1);
+  }
+  .slick-list {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+  }
+}
